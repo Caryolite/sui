@@ -22,6 +22,7 @@ import Home from './home.vue';
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap');
+@import url('./../assets/font/font.css');
 
 :root {
   --color-white: #F4F4F4;
