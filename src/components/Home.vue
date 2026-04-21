@@ -17,7 +17,7 @@
     </header>
 
     <!-- image -->
-    <div class="hero-image-wrapper">
+    <div class="hero-image-wrapper w-[362px] mx-20">
       <img
         class="hero-image"
         src="./../assets/home-img.jpg"
@@ -30,7 +30,7 @@
       <p class="glossary-entry">
         <span class="term">大炎</span><br>
         <span class="definition">泰拉大陸上的一個國家。</span><br>
-        <span class="term">歲</span><br>
+        <span class="term">歲</span><br> 
         <span class="definition">泰拉大陸上的巨獸，擁有演化的全能。<br>幫助人們建立大炎，狩獵其他巨獸，最後被封印在歲陵。</span><br>
         <span class="term">巨獸代理人</span><br>
         <span class="definition">歲被封印後由意識中分化出來的碎片。</span><br>
@@ -42,7 +42,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
+    <footer class="flex justify-center">
       <p class="footer-note">本網站為介紹與整理遊戲《明日方舟》歲家相關劇情。包含嚴重劇透。</p>
     </footer>
 
@@ -65,6 +65,19 @@
 </script>
 
 <style scoped>
+@font-face {
+  font-family: 'Bender';
+  src: url('/font/bender.woff2') format('woff2'),
+       url('/font/bender.woff') format('woff');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+/* Apply Bender font to all elements except the title */
+body, .site-subtitle, .menu-btn, .glossary, .site-footer {
+  font-family: 'Bender', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+}
 /* Header */
 .site-header {
   display: flex;
@@ -72,15 +85,9 @@
   align-items: flex-start;
   width: 366px;
   height: 60px;
-  position: absolute;
-  left: 17px;
-  top: 96px;
   backdrop-filter: blur(4px);
   z-index: 10;
-}
-
-.site-title-block {
-  position: relative;
+  margin: 80px 20px 40px 20px;
 }
 
 .site-title {
@@ -95,6 +102,7 @@
   height: 22px;
   overflow: visible;
   white-space: nowrap;
+  margin: 0;
 }
 
 .site-subtitle {
@@ -103,7 +111,7 @@
   font-size: 10px;
   font-weight: 300;
   line-height: 22px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .menu-btn {
@@ -117,18 +125,11 @@
   margin-top: 0;
 }
 
-/* Hero Image */
-.hero-image-wrapper {
-  position: absolute;
-  left: 20px;
-  top: 190px;
-  width: 360px;
-  height: 203px;
-}
 
 .hero-image {
-  width: 100%;
+  width: 362px;
   height: 100%;
+  margin: 0 auto;
   object-fit: cover;
   aspect-ratio: 133 / 75;
   display: block;
@@ -136,10 +137,8 @@
 
 /* Glossary Section */
 .glossary {
-  position: absolute;
-  left: 17px;
-  top: 411px;
   width: 363px;
+  padding: 0 20px;
 }
 
 .glossary-entry {
@@ -165,14 +164,8 @@
 }
 
 /* Footer */
-.site-footer {
-  position: absolute;
-  left: 46px;
-  top: 820px;
-  width: 310px;
-  height: 22px;
-}
-
+footer {
+  margin-top: 12rem;}
 .footer-note {
   color: var(--color-gray);
   font-feature-settings: 'liga' off, 'clig' off;
@@ -183,17 +176,5 @@
   white-space: nowrap;
 }
 
-@font-face {
-  font-family: 'Bender';
-  src: url('/font/bender.woff2') format('woff2'),
-       url('/font/bender.woff') format('woff');
-  font-weight: 300; /* Light */
-  font-style: normal;
-}
 
-/* Apply Bender font to all elements except the title */
-body, .site-subtitle, .menu-btn, .hero-image-wrapper, .glossary, .site-footer {
-  font-family: 'Bender', -apple-system, Roboto, Helvetica, sans-serif;
-  font-weight: 300;
-}
 </style>

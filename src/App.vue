@@ -3,7 +3,9 @@ import Home from './components/Home.vue';
 </script>
 
 <template>
-  <Home class="w-[402px] m-auto"/>
+  <div class="w-[402px] m-auto">
+    <Home />
+  </div>
 </template>
 
 <style>
@@ -14,12 +16,6 @@ import Home from './components/Home.vue';
   --color-dark-gray: #554E4E;
   --color-orange: #F0781C;
   --color-red: #9C1F1F;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
