@@ -1,8 +1,4 @@
 <template>
-  <head>
-    <title>歲歲今朝：歲家的故事 --明日方舟歲家介紹</title>
-  </head>
-
 <!-- Header -->
     <header class="site-header">
       <div class="site-title-block">
@@ -31,11 +27,11 @@
         <span class="term">大炎</span><br>
         <span class="definition">泰拉大陸上的一個國家。</span><br>
         <span class="term">歲</span><br> 
-        <span class="definition">泰拉大陸上的巨獸，擁有演化的全能。<br>幫助人們建立大炎，狩獵其他巨獸，最後被封印在歲陵。</span><br>
+        <span class="definition">泰拉大陸上的巨獸，擁有演化的權能。<br>幫助人們建立大炎，狩獵其他巨獸，最後被人類封印在歲陵。</span><br>
         <span class="term">巨獸代理人</span><br>
         <span class="definition">歲被封印後由意識中分化出來的碎片。</span><br>
         <span class="term">司歲台</span><br>
-        <span class="definition">大炎官方處理歲兽的部門。</span><br>
+        <span class="definition">大炎官方處理歲獸的部門。</span><br>
         <span class="term">秉燭人</span><br>
         <span class="definition">司歲台中負責監視巨獸代理人的官員。</span>
       </p>
@@ -65,19 +61,6 @@
 </script>
 
 <style scoped>
-@font-face {
-  font-family: 'Bender';
-  src: url('/font/bender.woff2') format('woff2'),
-       url('/font/bender.woff') format('woff');
-  font-weight: 300; /* Light */
-  font-style: normal;
-}
-
-/* Apply Bender font to all elements except the title */
-body, .site-subtitle, .menu-btn, .glossary, .site-footer {
-  font-family: 'Bender', -apple-system, Roboto, Helvetica, sans-serif;
-  font-weight: 300;
-}
 /* Header */
 .site-header {
   display: flex;
@@ -92,10 +75,10 @@ body, .site-subtitle, .menu-btn, .glossary, .site-footer {
 
 .site-title {
   color: var(--color-white);
+  font-family: 'ZhaohuaMinA';
   font-feature-settings: 'liga' off, 'clig' off;
-  font-family: ZhaohuaMinA;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: bold;
   line-height: 22px;
   letter-spacing: -10px;
   width: 162px;

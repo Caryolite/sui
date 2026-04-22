@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'ZhaohuaMinA';
+  src: url('/src/font/ZhaohuaMinA.ttf') format("truetype");
+  font-family: 'Bender';
+  src: url('/src/font/Bender-Light.otf') format('opentype');
+}
+
+/* Apply Bender font to all elements except the title */
+body, .site-subtitle, .menu-btn, .glossary, .site-footer {
+  font-family: 'Bender', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+}
