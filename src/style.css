@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'ZhaohuaMinA';
   src: url('/src/font/ZhaohuaMinA.ttf') format("truetype");
+}
+@font-face {
   font-family: 'Bender';
   src: url('/src/font/Bender-Light.otf') format('opentype');
 }
