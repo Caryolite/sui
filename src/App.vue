@@ -1,10 +1,12 @@
 <script setup>
 import Home from './components/Home.vue';
+import Menu from './components/Menu.vue';
 </script>
 
 <template>
   <div class="w-[402px] m-auto">
-    <Home />
+    <Menu />
+    <!-- <Home /> -->
   </div>
 </template>
 
