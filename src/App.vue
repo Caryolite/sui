@@ -9,14 +9,13 @@ const isMenuOpen = ref(false)
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
 }
-
 </script>
 
 <template>
   <div class="w-[402px] m-auto absolute">
     <!-- 當 Home 發出 'open-menu' 信號時，執行 toggleMenu -->
     <Home @openMenu="toggleMenu" v-if="!isMenuOpen"/>
-    <Menu class="absolute t-0" v-if="isMenuOpen" />
+    <Menu class="absolute t-0" @closeMenu="toggleMenu" v-if="isMenuOpen" />
   </div>
 </template>
 

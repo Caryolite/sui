@@ -1,6 +1,14 @@
 <template>
-<div class="container">
-    <div class="mt-[180px] pr-45">
+<div class="container relative">
+    <header class="site-header">
+        <div class="site-title-block">
+        </div>
+        <button class="menu-btn" aria-label="Menu" @click="$emit('closeMenu')">
+        <img src="../assets/closebtn.svg" width="30">
+        </button>
+    </header>
+
+    <div class="mt-[0px] pr-45">
         <h2>歲歲今朝</h2>
         <p>home</p>
         <span class="num1">1</span>
@@ -77,4 +85,80 @@ span {
     color: var(--color-orange);
     transform: translateX(85px) translateY(-60px);
 }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 366px;
+  height: 60px;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+  margin: 80px 20px 40px 20px;
+}
+
+.site-title {
+  color: var(--color-white);
+  font-family: 'ZhaohuaMinA';
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 22px;
+  letter-spacing: -10px;
+  width: 162px;
+  height: 22px;
+  overflow: visible;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.site-subtitle {
+  color: var(--color-white);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 22px;
+  /* margin-top: 16px; */
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+}
+
 </style>
+
+<script setup>
+//
+//                       _oo0oo_
+//                      o8888888o
+//                      88" . "88
+//                      (| -_- |)
+//                      0\  =  /0
+//                    ___/`---'\___
+//                  .' \\|     |// '.
+//                 / \\|||  :  |||// \
+//                / _||||| -:- |||||- \
+//               |   | \\\  -  /// |   |
+//               | \_|  ''\---/''  |_/ |
+//               \  .-\__  '-'  ___/-. /
+//             ___'. .'  /--.--\  `. .'___
+//          ."" '<  `.___\_<|>_/___.' >' "".
+//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+//         \  \ `_.   \_ __\ /__ _/   .-` /  /
+//     =====`-.____`.___ \_____/___.-`___.-'=====
+//                       `=---='
+//
+//
+//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//
+//               佛祖保佑         永无BUG
+//
+//
+</script>
