@@ -1,12 +1,22 @@
 <script setup>
+import { ref } from 'vue';
 import Home from './components/Home.vue';
 import Menu from './components/Menu.vue';
+
+// 切換menu
+const isMenuOpen = ref(false)
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value
+}
+
 </script>
 
 <template>
-  <div class="w-[402px] m-auto">
-    <Menu />
-    <!-- <Home /> -->
+  <div class="w-[402px] m-auto absolute">
+    <!-- 當 Home 發出 'open-menu' 信號時，執行 toggleMenu -->
+    <Home @openMenu="toggleMenu" v-if="!isMenuOpen"/>
+    <Menu class="absolute t-0" v-if="isMenuOpen" />
   </div>
 </template>
 
@@ -23,7 +33,7 @@ import Menu from './components/Menu.vue';
 body {
   background: var(--color-background);
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: flex-start;
   width: 402px;
@@ -33,7 +43,7 @@ body {
 .page-wrapper {
   width: 402px;
   min-height: 874px;
-  background: var(--color-background);
+  /* background: var(--color-background); */
   position: relative;
   overflow: hidden;
 }
