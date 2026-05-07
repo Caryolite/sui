@@ -6,14 +6,14 @@ import { ref } from 'vue';
         { id: 2, img: './../public/char2.png', name: '望' },
         { id: 3, img: './../public/char3.png', name: '令' },
         { id: 4, img: './../public/char4.png', name: '均' },
-        { id: 5, img: './../public/char5.png', name: '吉頁' },
+        { id: 5, img: './../public/char5.png', name: '頡' },
         { id: 6, img: './../public/char6.png', name: '黍' },
         { id: 7, img: './../public/char7.png', name: '績' },
         { id: 8, img: './../public/char8.png', name: '易' },
         { id: 9, img: './../public/char9.png', name: '年' },
-        { id: 10, img: '', name: '方' },
+        { id: 10, img: './../public/char10.png', name: '方' },
         { id: 11, img: './../public/char11.png', name: '夕' },
-        { id: 12, img: './../public/char12.png', name: '余' },
+        { id: 12, img: './../public/char12.png', name: '余' }
 
     ]);
 </script>
