@@ -7,15 +7,25 @@ import CharList from './components/CharList.vue';
 // 切換頁面狀態
 const currentPage = ref('home');
 
+const lastPage = ref('home');
+
 const changePage = (page) => {
+  if (page != 'menu') {
+    lastPage.value = page;
+  }
   currentPage.value = page;
 };
+
+const changeLastPage = () => {
+  currentPage.value = lastPage.value;
+};
+
 </script>
 
 <template>
   <div class="w-[402px] m-auto absolute">
     <Home @changePage="changePage('menu')" v-if="currentPage === 'home'" />
-    <Menu @changePage="(page) => changePage(page)" v-if="currentPage === 'menu'" />
+    <Menu @changePage="(page) => changePage(page)" @changeLastPage="changeLastPage" v-if="currentPage === 'menu'" />
     <CharList @changePage="changePage('menu')" v-if="currentPage === 'charList'" />
   </div>
 </template>

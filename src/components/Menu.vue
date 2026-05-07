@@ -3,7 +3,7 @@
     <header class="site-header">
         <div class="site-title-block">
         </div>
-        <button class="menu-btn" aria-label="Menu" ">
+        <button class="menu-btn" aria-label="Menu" @click="$emit('changeLastPage')">
         <img src="../assets/closebtn.svg" width="30">
         </button>
     </header>
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-defineEmits(['changePage', 'home'], ['changePage', 'charList']);
+defineEmits(['changePage', 'home'], ['changePage', 'charList'], ['changeLastPage']);
 
 </script>
 
