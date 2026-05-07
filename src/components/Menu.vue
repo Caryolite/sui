@@ -3,19 +3,19 @@
     <header class="site-header">
         <div class="site-title-block">
         </div>
-        <button class="menu-btn" aria-label="Menu" @click="$emit('closeMenu')">
+        <button class="menu-btn" aria-label="Menu" ">
         <img src="../assets/closebtn.svg" width="30">
         </button>
     </header>
 
     <div class="mt-[0px] pr-45">
-        <h2>歲歲今朝</h2>
+        <h2 @click="$emit('changePage', 'home')">歲歲今朝</h2>
         <p>home</p>
         <span class="num1">1</span>
     </div>
     <div class="line1"></div>
     <div class="mt-10 pl-40">
-        <h2>歲獸代理人</h2>
+        <h2 @click="$emit('changePage', 'charList')">歲獸代理人</h2>
         <p>Character</p>
         <span class="num2">2</span>
     </div>
@@ -34,6 +34,11 @@
 
 </template>
 
+<script setup>
+defineEmits(['changePage', 'home'], ['changePage', 'charList']);
+
+</script>
+
 <style scoped>
 h2 {
     font-family: 'ZhaohuaMinA';
@@ -43,13 +48,12 @@ h2 {
     line-height: 22px;
     letter-spacing: -4px;
     text-align: center;
-    /* margin: 0; */
+    cursor: pointer;
 }
 p {
     text-align: center;
     font-size: 10px;
     color: var(--color-gray);
-    /* margin: 0; */
 }
 .line1 {
     width: 70px;
@@ -133,32 +137,3 @@ span {
 }
 
 </style>
-
-<script setup>
-//
-//                       _oo0oo_
-//                      o8888888o
-//                      88" . "88
-//                      (| -_- |)
-//                      0\  =  /0
-//                    ___/`---'\___
-//                  .' \\|     |// '.
-//                 / \\|||  :  |||// \
-//                / _||||| -:- |||||- \
-//               |   | \\\  -  /// |   |
-//               | \_|  ''\---/''  |_/ |
-//               \  .-\__  '-'  ___/-. /
-//             ___'. .'  /--.--\  `. .'___
-//          ."" '<  `.___\_<|>_/___.' >' "".
-//         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
-//         \  \ `_.   \_ __\ /__ _/   .-` /  /
-//     =====`-.____`.___ \_____/___.-`___.-'=====
-//                       `=---='
-//
-//
-//     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-//
-//               佛祖保佑         永无BUG
-//
-//
-</script>

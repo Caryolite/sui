@@ -4,19 +4,19 @@ import Home from './components/Home.vue';
 import Menu from './components/Menu.vue';
 import CharList from './components/CharList.vue';
 
-// 切換menu
-const isMenuOpen = ref(false)
+// 切換頁面狀態
+const currentPage = ref('home');
 
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
+const changePage = (page) => {
+  currentPage.value = page;
+};
 </script>
 
 <template>
   <div class="w-[402px] m-auto absolute">
-    <Home @openMenu="toggleMenu" v-if="!isMenuOpen"/>
-    <Menu class="absolute t-0" @closeMenu="toggleMenu" v-if="isMenuOpen" />
-    <!-- <CharList/> -->
+    <Home @changePage="changePage('menu')" v-if="currentPage === 'home'" />
+    <Menu @changePage="(page) => changePage(page)" v-if="currentPage === 'menu'" />
+    <CharList @changePage="changePage('menu')" v-if="currentPage === 'charList'" />
   </div>
 </template>
 
