@@ -3,9 +3,8 @@ import { ref } from 'vue';
 import Home from './components/Home.vue';
 import Menu from './components/Menu.vue';
 import CharList from './components/CharList.vue';
-import Char from './components/Char.vue';
 
-// 切換menux`
+// 切換menu
 const isMenuOpen = ref(false)
 
 const toggleMenu = () => {
@@ -15,10 +14,9 @@ const toggleMenu = () => {
 
 <template>
   <div class="w-[402px] m-auto absolute">
-    <!-- <Home @openMenu="toggleMenu" v-if="!isMenuOpen"/> -->
-    <!-- <Menu class="absolute t-0" @closeMenu="toggleMenu" v-if="isMenuOpen" /> -->
-    <CharList/>
-    <!-- <Char/> -->
+    <Home @openMenu="toggleMenu" v-if="!isMenuOpen"/>
+    <Menu class="absolute t-0" @closeMenu="toggleMenu" v-if="isMenuOpen" />
+    <!-- <CharList/> -->
   </div>
 </template>
 
