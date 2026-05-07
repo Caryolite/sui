@@ -36,14 +36,14 @@ defineEmits(['changePage']);
 <style scoped>
 h3 {
   color: var(--color-white);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 22px;
 }
 
 p {
   color: var(--color-gray);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 22px;
 }

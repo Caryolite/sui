@@ -122,7 +122,7 @@ defineEmits(['changePage']);
 
 .term {
   color: var(--color-white);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 22px;
 }
