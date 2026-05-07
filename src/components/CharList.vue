@@ -40,7 +40,7 @@ defineEmits(['changePage']);
         <div v-for="char in CharList" :key="char.id">
             <div class="w-[362px] h-[75px] flex items-center">
                 <img class="w-[362px] h-[75px] opacity-50" :src="char.img" :alt="char.name"/>
-                <h2 class="w-[72px] absolute right-0">{{ char.name }}</h2>
+                <h2 class="w-[72px] absolute right-[20px]">{{ char.name }}</h2>
             </div>
         </div>
     </div>

@@ -17,16 +17,17 @@ defineEmits(['changePage']);
   </header>
 
   <div class="px-[20px]">
-    <h3 class="mb-[4rem]">    
+    <h3 class="mb-[1rem]">    
       歲片們的故事。<br>
       自己也畫了一些二創圖，歡迎看看！<br>
     </h3>
+    <img src="/noteImg.jpg" width="362px" class="mb-[2rem]"/>
     <h4>
       本人是二哥廚嘿嘿<br>
       一切都是XP<br>
       誰不想吃二哥肥肥大尾巴😭😭<br><br>
-      <a href="https://github.com/Caryolite/sui">GitHub 倉庫: https://github.com/Caryolite/sui</a><br>
-
+      <a href="https://github.com/Caryolite/sui" target="_blank">GitHub: https://github.com/Caryolite/sui</a><br>
+      credit 我 and 我自己 and 林妍蓁(一起打衛戍協議的部分)
     </h4>
   </div>
 
