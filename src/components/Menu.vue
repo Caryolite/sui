@@ -21,7 +21,7 @@
     </div>
     <div class="line2"></div>
     <div class="mt-10 pr-40">
-        <h2>邸報</h2>
+        <h2 @click="$emit('changePage', 'story')">邸報</h2>
         <p>Story</p>
         <span class="num3">3</span>
     </div>
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-defineEmits(['changePage', 'home'], ['changePage', 'charList'], ['changePage', 'note'], ['changeLastPage']);
+defineEmits(['changePage', 'home'], ['changePage', 'charList'], ['changePage', 'story'], ['changePage', 'note'], ['changeLastPage']);
 
 </script>
 

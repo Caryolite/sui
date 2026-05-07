@@ -21,13 +21,13 @@ defineEmits(['changePage']);
       歲片們的故事。<br>
       自己也畫了一些二創圖，歡迎看看！<br>
     </h3>
-    <p>
+    <h4>
       本人是二哥廚嘿嘿<br>
       一切都是XP<br>
       誰不想吃二哥肥肥大尾巴😭😭<br><br>
       <a href="https://github.com/Caryolite/sui">GitHub 倉庫: https://github.com/Caryolite/sui</a><br>
 
-    </p>
+    </h4>
   </div>
 
   <div class="m-40"></div>
@@ -41,7 +41,7 @@ h3 {
   line-height: 22px;
 }
 
-p {
+h4 {
   color: var(--color-gray);
   font-size: 12px;
   font-weight: 400;

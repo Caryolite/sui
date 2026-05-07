@@ -2,19 +2,18 @@
 import { ref } from 'vue';
 
 const CharList = ref([
-
-    { id: 1, img: './../public/char1.png', name: '重岳' },
-    { id: 2, img: './../public/char2.png', name: '望' },
-    { id: 3, img: './../public/char3.png', name: '令' },
-    { id: 4, img: './../public/char4.png', name: '均' },
-    { id: 5, img: './../public/char5.png', name: '頡' },
-    { id: 6, img: './../public/char6.png', name: '黍' },
-    { id: 7, img: './../public/char7.png', name: '績' },
-    { id: 8, img: './../public/char8.png', name: '易' },
-    { id: 9, img: './../public/char9.png', name: '年' },
-    { id: 10, img: './../public/char10.png', name: '方' },
-    { id: 11, img: './../public/char11.png', name: '夕' },
-    { id: 12, img: './../public/char12.png', name: '余' }
+    { id: 1, img: '/char1.png', name: '重岳' },
+    { id: 2, img: '/char2.png', name: '望' },
+    { id: 3, img: '/char3.png', name: '令' },
+    { id: 4, img: '/char4.png', name: '均' },
+    { id: 5, img: '/char5.png', name: '頡' },
+    { id: 6, img: '/char6.png', name: '黍' },
+    { id: 7, img: '/char7.png', name: '績' },
+    { id: 8, img: '/char8.png', name: '易' },
+    { id: 9, img: '/char9.png', name: '年' },
+    { id: 10, img: '/char10.png', name: '方' },
+    { id: 11, img: '/char11.png', name: '夕' },
+    { id: 12, img: '/char12.png', name: '余' }
 
 ]);
 
@@ -26,7 +25,7 @@ defineEmits(['changePage']);
     <header class="site-header">
       <div class="site-title-block">
         <h1 class="site-title text-[36px]">歲獸代理人</h1>
-        <p class="site-subtitle">Arknights</p>
+        <p class="site-subtitle">Characters</p>
       </div>
       <button class="menu-btn" aria-label="Menu" @click="$emit('changePage')">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
