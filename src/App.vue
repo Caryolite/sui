@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import Home from './components/Home.vue';
 import Menu from './components/Menu.vue';
 import CharList from './components/CharList.vue';
+import Note from './components/Note.vue';
 
 // 切換頁面狀態
 const currentPage = ref('home');
@@ -24,9 +25,10 @@ const changeLastPage = () => {
 
 <template>
   <div class="w-[402px] m-auto absolute">
-    <Home @changePage="changePage('menu')" v-if="currentPage === 'home'" />
     <Menu @changePage="(page) => changePage(page)" @changeLastPage="changeLastPage" v-if="currentPage === 'menu'" />
+    <Home @changePage="changePage('menu')" v-if="currentPage === 'home'" />
     <CharList @changePage="changePage('menu')" v-if="currentPage === 'charList'" />
+    <Note @changePage="changePage('menu')" v-if="currentPage === 'note'" />
   </div>
 </template>
 

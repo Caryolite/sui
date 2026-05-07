@@ -27,7 +27,7 @@
     </div>
     <div class="line3"></div>
     <div class="mt-60">
-        <h2>後記</h2>
+        <h2 @click="$emit('changePage', 'note')">後記</h2>
         <p>note</p>
     </div>
 </div>
@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-defineEmits(['changePage', 'home'], ['changePage', 'charList'], ['changeLastPage']);
+defineEmits(['changePage', 'home'], ['changePage', 'charList'], ['changePage', 'note'], ['changeLastPage']);
 
 </script>
 
