@@ -2,18 +2,18 @@
 import { ref } from 'vue';
 
 const CharList = ref([
-    { id: 1, img: '/char1.png', name: '重岳' },
-    { id: 2, img: '/char2.png', name: '望' },
-    { id: 3, img: '/char3.png', name: '令' },
-    { id: 4, img: '/char4.png', name: '均' },
-    { id: 5, img: '/char5.png', name: '頡' },
-    { id: 6, img: '/char6.png', name: '黍' },
-    { id: 7, img: '/char7.png', name: '績' },
-    { id: 8, img: '/char8.png', name: '易' },
-    { id: 9, img: '/char9.png', name: '年' },
-    { id: 10, img: '/char10.png', name: '方' },
-    { id: 11, img: '/char11.png', name: '夕' },
-    { id: 12, img: '/char12.png', name: '余' }
+    { id: 1, img: '/char1.png', name: '重岳', url:'https://prts.wiki/w/%E9%87%8D%E5%B2%B3'},
+    { id: 2, img: '/char2.png', name: '望', url:'https://prts.wiki/w/%E6%9C%9B' },
+    { id: 3, img: '/char3.png', name: '令', url:'https://prts.wiki/w/%E4%BB%A4' },
+    { id: 4, img: '/char4.png', name: '均', url:'' },
+    { id: 5, img: '/char5.png', name: '頡', url:'' },
+    { id: 6, img: '/char6.png', name: '黍', url:'https://prts.wiki/w/%E9%BB%8D' },
+    { id: 7, img: '/char7.png', name: '績', url:'' },
+    { id: 8, img: '/char8.png', name: '易', url:'' },
+    { id: 9, img: '/char9.png', name: '年', url:'https://prts.wiki/w/%E5%B9%B4' },
+    { id: 10, img: '/char10.png', name: '方', url:'' },
+    { id: 11, img: '/char11.png', name: '夕', url:'https://prts.wiki/w/%E5%A4%95' },
+    { id: 12, img: '/char12.png', name: '余', url:'https://prts.wiki/w/%E4%BD%99' }
 
 ]);
 
@@ -39,10 +39,10 @@ defineEmits(['changePage']);
 
     <div class="container">
         <div v-for="char in CharList" :key="char.id">
-            <div class="w-[362px] h-[75px] flex items-center">
+            <a :onclick="char.url ? null : 'return false;' " :href="char.url" target="_blank"><div class="w-[362px] h-[75px] flex items-center">
                 <img class="w-[362px] h-[75px] opacity-50 cursor-pointer charHover" :src="char.img" :alt="char.name"/>
                 <h2 class="w-[72px] absolute right-[20px]">{{ char.name }}</h2>
-            </div>
+            </div></a>
         </div>
     </div>
 
