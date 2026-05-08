@@ -57,8 +57,12 @@ const storyUrl = [
 
   </div>
 
-    <div class="m-40"></div>
 
+    <!-- Footer -->
+    <footer class="flex justify-center">
+      <p class="footer-note">點擊跳轉ASTR明日方舟劇情文本閱讀器</p>
+    </footer>
+    <div class="m-[20px]"></div>
     </div>
 </template>
 

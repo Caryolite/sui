@@ -125,4 +125,18 @@ body {
   z-index: -1;
 } */
 
+/* Footer */
+footer {
+  margin-top: 12rem;}
+.footer-note {
+  color: var(--color-gray);
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
 </style>

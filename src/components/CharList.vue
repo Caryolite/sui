@@ -40,7 +40,7 @@ defineEmits(['changePage']);
     <div class="container">
         <div v-for="char in CharList" :key="char.id">
             <div class="w-[362px] h-[75px] flex items-center">
-                <img class="w-[362px] h-[75px] opacity-50" :src="char.img" :alt="char.name"/>
+                <img class="w-[362px] h-[75px] opacity-50 cursor-pointer charHover" :src="char.img" :alt="char.name"/>
                 <h2 class="w-[72px] absolute right-[20px]">{{ char.name }}</h2>
             </div>
         </div>
@@ -59,4 +59,11 @@ h2 {
     letter-spacing: -10px;
     text-align: center;
     }
+.charHover{
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+.charHover:hover {
+    transition: opacity 0.3s;
+    opacity: 1;}
 </style>
