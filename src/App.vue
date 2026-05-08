@@ -27,7 +27,7 @@ const changeLastPage = () => {
 <template>
   <div class="w-[402px] m-auto absolute">
     <Menu      @changePage="(page) => changePage(page)" @changeLastPage="changeLastPage" v-if="currentPage === 'menu'" />
-    <Home      @changePage="changePage('menu')"    v-if="currentPage === 'home'" />
+    <Home      @changePage="changePage('menu')"    v-if="currentPage === 'home'"/>
     <CharList  @changePage="changePage('menu')"    v-if="currentPage === 'charList'" />
     <Story     @changePage="changePage('menu')"    v-if="currentPage === 'story'" />
     <Note      @changePage="changePage('menu')"    v-if="currentPage === 'note'" />
@@ -51,6 +51,14 @@ body {
   justify-content: center;
   width: 402px;
   margin: auto;
+}
+
+.animation {
+  animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Header */

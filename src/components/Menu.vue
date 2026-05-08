@@ -1,5 +1,5 @@
 <template>
-<div class="container relative">
+<div class="container relative animation">
     <header class="site-header">
         <div class="site-title-block">
         </div>

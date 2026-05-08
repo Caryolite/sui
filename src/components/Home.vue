@@ -1,5 +1,6 @@
 <template>
 <!-- Header -->
+ <div class="animation">
     <header class="site-header">
       <div class="site-title-block">
         <h1 class="site-title">歲歲今朝</h1>
@@ -41,7 +42,7 @@
     <footer class="flex justify-center">
       <p class="footer-note">本網站為介紹與整理遊戲《明日方舟》歲家相關劇情。包含嚴重劇透。</p>
     </footer>
-
+</div>
 </template>
 
 <script setup>

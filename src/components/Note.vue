@@ -3,6 +3,7 @@ defineEmits(['changePage']);
 </script>
 
 <template>
+  <div class="animation">
   <!-- header -->
   <header class="site-header">
     <div class="site-title-block">
@@ -32,6 +33,7 @@ defineEmits(['changePage']);
   </div>
 
   <div class="m-40"></div>
+  </div>
 </template>
 
 <style scoped>

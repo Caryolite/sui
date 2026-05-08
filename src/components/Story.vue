@@ -26,7 +26,8 @@ const storyUrl = [
 </script>
 
 <template>
-  <!-- header -->
+  <div class="animation">
+<!-- header -->
   <header class="site-header">
     <div class="site-title-block">
       <h1 class="site-title text-[36px]">邸報</h1>
@@ -57,6 +58,8 @@ const storyUrl = [
   </div>
 
     <div class="m-40"></div>
+
+    </div>
 </template>
 
 <style scoped>
