@@ -43,7 +43,7 @@ const storyUrl = [
 
   <div class="container">
   
-    <div v-for="story in storyList" :key="story.id">
+    <div v-for="story in storyList" :key="story.id" class="storyHover">
 
       <div class="mx-[20px]"><a :href="storyUrl[story.id - 1].url" target="_blank" rel="noopener noreferrer">
         <div class="flex justify-between">
@@ -80,5 +80,12 @@ h3, p {
   font-size: 12px;
   font-weight: 400;
   line-height: 22px;
+}
+.storyHover h2{
+  transition: color 0.3s;
+}
+.storyHover:hover h2{
+  transition: color 0.3s;
+  color: var(--color-orange);
 }
 </style>
